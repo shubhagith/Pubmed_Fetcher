@@ -1,0 +1,17 @@
+[project]
+name = "pubmed-fetcher"
+version = "0.1.0"
+description = "A CLI tool to fetch research papers from PubMed."
+authors = [{ name = "Shubhashree Mohapatra", email = "shubhashree636@gmail.com" }]
+requires-python = ">=3.8"
+dependencies = [
+    "requests>=2.26.0"
+]
+packages = [{ include = "pubmed_fetcher" }]
+
+[project.scripts]
+get-papers-list = "pubmed_fetcher.cli:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
