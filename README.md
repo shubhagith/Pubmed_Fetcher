@@ -26,6 +26,11 @@ poetry install
 ## Usage
 
 ### Command-line Interface
+To display help message, run the following command:
+```sh
+poetry run get-papers-list -h
+```
+
 To fetch research papers, run the following command:
 ```sh
 poetry run get-papers-list "cancer treatment"
@@ -67,4 +72,3 @@ When running the script without saving to a file, it prints output similar to:
 
 ## License
 This project is licensed under the MIT License.
-
