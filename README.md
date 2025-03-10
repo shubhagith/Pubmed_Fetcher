@@ -17,9 +17,10 @@ pubmed_fetcher/
 - Python 3.7 or higher
 - `requests` library (for making HTTP requests)
 
-### Install Dependencies
+### Install Poetry and Dependencies
 ```sh
-pip install -r requirements.txt
+pip install poetry
+poetry install
 ```
 
 ## Usage
@@ -27,17 +28,17 @@ pip install -r requirements.txt
 ### Command-line Interface
 To fetch research papers, run the following command:
 ```sh
-python pubmed_fetcher/cli.py "cancer research"
+poetry run get-papers-list "cancer treatment"
 ```
 
 To save the results to a CSV file:
 ```sh
-python pubmed_fetcher/cli.py "cancer research" -f results.csv
+poetry run get-papers-list "cancer treatment" -f results.csv
 ```
 
 Enable debug mode for detailed logging:
 ```sh
-python pubmed_fetcher/cli.py "cancer research" -d
+poetry run get-papers-list "cancer treatment" -d
 ```
 
 ## Example Output
